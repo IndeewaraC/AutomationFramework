@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">17,962</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Base.BaseJava</td><td><a href="#m0">tearDownReporter</a></td><td rowspan="1">1758160061683</td><td rowspan="1">209</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test.TestJava</td><td><a href="#m1">AdminView</a></td><td rowspan="1">1758160046749</td><td rowspan="1">10534</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Test.TestJava</td><td><a href="#m2">LoginVerification</a></td><td rowspan="1">1758160057775</td><td rowspan="1">2003</td></tr><tr class="passedeven"><td><a href="#m3">verifyHomePageTitle</a></td><td rowspan="1">1758160061341</td><td rowspan="1">9</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">Base.BaseJava#tearDownReporter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/bson/types/ObjectId
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3650)
+	at java.base/java.lang.Class.privateGetPublicMethods(Class.java:3675)
+	at java.base/java.lang.Class.getMethods(Class.java:2244)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:775)
+	at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:767)
+	at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:286)
+	at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:260)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:111)
+	at freemarker.ext.beans.BeanModel.&lt;init&gt;(BeanModel.java:102)
+	at freemarker.ext.beans.StringModel.&lt;init&gt;(StringModel.java:56)
+	at freemarker.ext.beans.StringModel$1.create(StringModel.java:39)
+	at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
+	at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
+	at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:939)
+	at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:287)
+	at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:255)
+	at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
+	at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:77)
+	at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:116)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:82)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.Dot._eval(Dot.java:41)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.MethodCall._eval(MethodCall.java:55)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.Expression.evalToBoolean(Expression.java:177)
+	at freemarker.core.Expression.evalToBoolean(Expression.java:163)
+	at freemarker.core.AndExpression.evalToBoolean(AndExpression.java:36)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:335)
+	at freemarker.core.Environment.visit(Environment.java:341)
+	at freemarker.core.Environment.process(Environment.java:314)
+	at freemarker.template.Template.process(Template.java:383)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:53)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:40)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:46)
+	at com.aventstack.extentreports.reporter.BasicFileReporter.processTemplate(BasicFileReporter.java:152)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:78)
+	at com.aventstack.extentreports.ReportObservable.lambda$23(ReportObservable.java:526)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at com.aventstack.extentreports.ReportObservable.notifyReporters(ReportObservable.java:526)
+	at com.aventstack.extentreports.ReportObservable.flush(ReportObservable.java:424)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:290)
+	at Base.BaseJava.tearDownReporter(BaseJava.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+	... 62 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test.TestJava#AdminView</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/div/div[2]/div[1]/header/div[1]/div[3]/ul/li/ul/li[2]/a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57797/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a7b4f1a82d9e76698f8ba77a80fe344
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.WaitsUtil.clickable(WaitsUtil.java:41)
+	at Page.ViewSystemUsers.GotoPIM(ViewSystemUsers.java:49)
+	at Test.TestJava.AdminView(TestJava.java:87)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test.TestJava#LoginVerification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Test.TestJava#verifyHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
