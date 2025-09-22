@@ -1,37 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="1" failed="2" skipped="2">
+<testng-results ignored="0" total="6" passed="1" failed="3" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-22T16:47:41 CDT" name="OrangeHRM Test Suite 01" finished-at="2025-09-22T16:48:00 CDT" duration-ms="19049">
+  <suite started-at="2025-09-22T16:59:07 CDT" name="OrangeHRM Test Suite 01" finished-at="2025-09-22T16:59:26 CDT" duration-ms="19021">
     <groups>
     </groups>
-    <test started-at="2025-09-22T16:47:41 CDT" name="Login and Dashboard Tests" finished-at="2025-09-22T16:48:00 CDT" duration-ms="19049">
+    <test started-at="2025-09-22T16:59:07 CDT" name="Login and Dashboard Tests" finished-at="2025-09-22T16:59:26 CDT" duration-ms="19021">
       <class name="Test.TestJava">
-        <test-method is-config="true" signature="setupReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:41 CDT" name="setupReporter" finished-at="2025-09-22T16:47:41 CDT" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="setupReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:07 CDT" name="setupReporter" finished-at="2025-09-22T16:59:07 CDT" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReporter -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:41 CDT" name="setup" finished-at="2025-09-22T16:47:42 CDT" duration-ms="1212" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:07 CDT" name="setup" finished-at="2025-09-22T16:59:08 CDT" duration-ms="1158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:42 CDT" name="openPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:08 CDT" name="openPage" finished-at="2025-09-22T16:59:10 CDT" duration-ms="1561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="initPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="initPage" finished-at="2025-09-22T16:59:10 CDT" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="verifyHomePageTitle" finished-at="2025-09-22T16:47:44 CDT" duration-ms="22" status="PASS">
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="verifyHomePageTitle" finished-at="2025-09-22T16:59:10 CDT" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="openPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="479" status="PASS">
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T16:59:10 CDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlObject]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlObject
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlObject
+at utils.ExcelUtil.getExcelData(ExcelUtil.java:17)
+at Test.TestJava.loginData(TestJava.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+... 25 more
+Caused by: java.lang.ClassNotFoundException: org.apache.xmlbeans.XmlObject
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="openPage" finished-at="2025-09-22T16:59:10 CDT" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="verifyDashboard()[pri:3, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="verifyDashboard" finished-at="2025-09-22T16:47:44 CDT" duration-ms="15" status="FAIL">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="initPage" finished-at="2025-09-22T16:59:10 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="verifyDashboard()[pri:3, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="verifyDashboard" finished-at="2025-09-22T16:59:10 CDT" duration-ms="12" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Navigation Fail expected [true] but found [false]]]>
@@ -74,11 +131,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboard -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="initPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPage -->
-        <test-method signature="PIM()[pri:4, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="PIM" finished-at="2025-09-22T16:47:44 CDT" depends-on-methods="Test.TestJava.verifyDashboard" duration-ms="0" status="SKIP">
+        <test-method signature="PIM()[pri:4, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="PIM" finished-at="2025-09-22T16:59:10 CDT" depends-on-methods="Test.TestJava.verifyDashboard" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method Test.TestJava.PIM() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
@@ -112,27 +165,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PIM -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="openPage" finished-at="2025-09-22T16:47:45 CDT" duration-ms="470" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:10 CDT" name="openPage" finished-at="2025-09-22T16:59:11 CDT" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="PimSearch()[pri:5, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:45 CDT" name="PimSearch" finished-at="2025-09-22T16:48:00 CDT" duration-ms="15211" status="FAIL">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:11 CDT" name="initPage" finished-at="2025-09-22T16:59:11 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="PimSearch()[pri:5, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:11 CDT" name="PimSearch" finished-at="2025-09-22T16:59:26 CDT" duration-ms="15223" status="FAIL">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[PIM menu not accessible: Expected condition failed: waiting for element to be clickable: By.xpath: //aside//span[text()='PIM'] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57249/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 457b39a27674d724cc378e406fc57c25]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57594/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00bf88b4ee6d19f367cb8cf8e397d187]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalStateException: PIM menu not accessible: Expected condition failed: waiting for element to be clickable: By.xpath: //aside//span[text()='PIM'] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57249/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 457b39a27674d724cc378e406fc57c25
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57594/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 00bf88b4ee6d19f367cb8cf8e397d187
 at Page.DashBoard.GotoPIM(DashBoard.java:50)
 at Test.TestJava.PimSearch(TestJava.java:149)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -167,11 +224,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PimSearch -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:45 CDT" name="initPage" finished-at="2025-09-22T16:47:45 CDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPage -->
-        <test-method signature="compare()[pri:6, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:48:00 CDT" name="compare" finished-at="2025-09-22T16:48:00 CDT" depends-on-methods="Test.TestJava.PimSearch" duration-ms="1" status="SKIP">
+        <test-method signature="compare()[pri:6, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:26 CDT" name="compare" finished-at="2025-09-22T16:59:26 CDT" depends-on-methods="Test.TestJava.PimSearch" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method Test.TestJava.compare() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
@@ -205,7 +258,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compare -->
-        <test-method is-config="true" signature="tearDownReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:48:00 CDT" name="tearDownReporter" finished-at="2025-09-22T16:48:02 CDT" duration-ms="1612" status="PASS">
+        <test-method is-config="true" signature="tearDownReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:59:26 CDT" name="tearDownReporter" finished-at="2025-09-22T16:59:28 CDT" duration-ms="1624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReporter -->

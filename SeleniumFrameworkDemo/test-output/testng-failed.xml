@@ -11,6 +11,7 @@
           <include name="openPage"/>
           <include name="setupReporter"/>
           <include name="setup"/>
+          <include name="loginVerification"/>
           <include name="compare"/>
           <include name="PIM"/>
           <include name="verifyDashboard"/>
