@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHRM Test Suite 01" verbose="1">
+
+
+    <parameter name="baseUrl" value="https://indeewarag-osondemand.orangehrm.com/auth/login"/>
+
+
+    <test name="Login and Dashboard Tests">
+        <classes>
+            <class name="Test.TestJava"/> 
+        </classes>
+    </test>
+    
+    
+
+</suite>

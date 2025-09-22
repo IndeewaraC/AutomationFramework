@@ -9,6 +9,23 @@ import org.testng.annotations.*;
 public class BaseJava {
 	protected WebDriver driver;
 	
+	@BeforeSuite
+	@Parameters("Sample Suite 01")
+	public void setupReporter() {
+	    ReportManager.createReporter("test-output/ExtentReport.html");
+	}
+	
+	@AfterSuite
+	public void tearDownReporter() throws InterruptedException {
+		if (driver != null) {
+			Thread.sleep(1000);
+            driver.quit();
+            System.out.println("Browser closed and WebDriver session ended.");
+            ReportManager.flushReporter();
+        }
+	}
+	
+	
 	@BeforeClass
 	public void setup()
 	{
@@ -23,18 +40,9 @@ public class BaseJava {
         driver.get("https://indeewarag-osondemand.orangehrm.com/auth/login");
     }
 	
-	@AfterSuite
-	public void tearDownReporter() {
-		ReportManager.getReporter().flush();
-	}
 	
-	@AfterClass
-	public void tearDown()
-	{
-		if(driver !=null)
-		{
-			driver.quit();
-		}
-	}
+	/*
+	 * @AfterClass public void tearDown() { if(driver !=null) { driver.quit(); } }
+	 */
 	
 }

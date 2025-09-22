@@ -18,19 +18,25 @@ public class LoginPage {
 		this.util = new WaitsUtil(driver);
 	}
 	 //defind the locator by using Xpath
-		private By Username = By.xpath("//input[@name='username']");
-		private By Password = By.xpath("//input[@name='password']");
-		private By loginBtn	= By.xpath("//button[@type='submit']");
+		private final By Username = By.xpath("//input[@name='username']");
+		private final By Password = By.xpath("//input[@name='password']");
+		private final By loginBtn	= By.xpath("//button[@type='submit']");
 	//Argument Pass and Action
-		public void enterUsername(String UN)
+		public LoginPage enterUsername(String UN)
 		{
 			util.sendKeysWhenVisible(Username, UN, 10);
+			return this;
+			
 		}
 
-		public void enterPassword(String PW) {
+		public LoginPage enterPassword(String PW) {
 			util.sendKeysWhenVisible(Password, PW, 10);
+			return this;
+	
 		}
-		public void clickBtnLogin() {
-			util.clickWhenVisible(loginBtn, 10);
+		public LoginPage clickBtnLogin() {
+			util.clickwhenclicable(loginBtn, 10);
+			return this;
+
 		}
 }

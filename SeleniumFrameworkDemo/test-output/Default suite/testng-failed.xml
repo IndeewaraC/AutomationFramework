@@ -7,17 +7,14 @@
         <methods>
           <include name="tearDownReporter"/>
           <include name="openPage"/>
+          <include name="setupReporter"/>
+          <include name="PIMheaderVerify"/>
           <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="AdminView"/>
+          <include name="PIM"/>
+          <include name="verifyDashboard"/>
           <include name="initPage"/>
         </methods>
       </class> <!-- Test.TestJava -->
-      <class name="Base.BaseJava">
-        <methods>
-          <include name="tearDownReporter"/>
-        </methods>
-      </class> <!-- Base.BaseJava -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

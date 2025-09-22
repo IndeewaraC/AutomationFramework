@@ -10,26 +10,41 @@ public class ReportManager {
 	private static ExtentReports xt;
 	private static ExtentTest xts;
 	
+	public static void createReporter(String filePath) {
+        if (xt == null) {
+            ExtentSparkReporter spk = new ExtentSparkReporter(filePath);
+            xt = new ExtentReports();
+            xt.attachReporter(spk);
+        }
+    }
+	
 	public static ExtentReports getReporter()
 	{
 		if(xt == null)
 		{
-			ExtentSparkReporter spk = new ExtentSparkReporter("test-output/ExtentReport.html");
-			xt = new ExtentReports();
-			xt.attachReporter(spk);
-		}
-		
+			 throw new IllegalStateException("Reporter not initialized. Call createReporter() first.");
+        }
 		return xt;
 	}
 	
 	public static ExtentTest createTest(String TestName) {
-		xts = getReporter().createTest(TestName);
-		return xts;
+		if (xt == null) {
+            throw new IllegalStateException("Test not created.");
+        }
+		xts = xt.createTest(TestName);
+        return xts;
 	}
 	
-	public static ExtentTest getTest()
-	{
-		return xts;
-	}
+	public static ExtentTest getTest() {
+        if (xts == null) {
+            throw new IllegalStateException("Test not created. Call createTest() first.");
+        }
+        return xts;
+    }
 	
+	 public static void flushReporter() {
+	        if (xt != null) {
+	            xt.flush();
+	        }}
+
 }

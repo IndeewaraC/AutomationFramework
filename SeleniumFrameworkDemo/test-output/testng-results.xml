@@ -1,128 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="1" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-17T20:47:23 CDT" name="Default suite" finished-at="2025-09-17T20:47:41 CDT" duration-ms="17962">
+  <suite started-at="2025-09-22T16:47:41 CDT" name="OrangeHRM Test Suite 01" finished-at="2025-09-22T16:48:00 CDT" duration-ms="19049">
     <groups>
     </groups>
-    <test started-at="2025-09-17T20:47:23 CDT" name="Default test" finished-at="2025-09-17T20:47:41 CDT" duration-ms="17962">
-      <class name="Base.BaseJava">
-        <test-method is-config="true" signature="tearDownReporter()[pri:0, instance:Base.BaseJava@445b295b]" started-at="2025-09-17T20:47:41 CDT" name="tearDownReporter" finished-at="2025-09-17T20:47:41 CDT" duration-ms="209" status="FAIL">
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[org/bson/types/ObjectId]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/bson/types/ObjectId
-at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
-at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3650)
-at java.base/java.lang.Class.privateGetPublicMethods(Class.java:3675)
-at java.base/java.lang.Class.getMethods(Class.java:2244)
-at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:775)
-at freemarker.ext.beans.ClassIntrospector.discoverAccessibleMethods(ClassIntrospector.java:767)
-at freemarker.ext.beans.ClassIntrospector.createClassIntrospectionData(ClassIntrospector.java:286)
-at freemarker.ext.beans.ClassIntrospector.get(ClassIntrospector.java:260)
-at freemarker.ext.beans.BeanModel.<init>(BeanModel.java:111)
-at freemarker.ext.beans.BeanModel.<init>(BeanModel.java:102)
-at freemarker.ext.beans.StringModel.<init>(StringModel.java:56)
-at freemarker.ext.beans.StringModel$1.create(StringModel.java:39)
-at freemarker.ext.beans.BeansModelCache.create(BeansModelCache.java:72)
-at freemarker.ext.util.ModelCache.getInstance(ModelCache.java:80)
-at freemarker.ext.beans.BeansWrapper.wrap(BeansWrapper.java:939)
-at freemarker.template.DefaultObjectWrapper.handleUnknownType(DefaultObjectWrapper.java:287)
-at freemarker.template.DefaultObjectWrapper.wrap(DefaultObjectWrapper.java:255)
-at freemarker.template.WrappingTemplateModel.wrap(WrappingTemplateModel.java:112)
-at freemarker.template.DefaultListAdapter.get(DefaultListAdapter.java:77)
-at freemarker.core.DynamicKeyName.dealWithNumericalKey(DynamicKeyName.java:116)
-at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:82)
-at freemarker.core.Expression.eval(Expression.java:101)
-at freemarker.core.Dot._eval(Dot.java:41)
-at freemarker.core.Expression.eval(Expression.java:101)
-at freemarker.core.MethodCall._eval(MethodCall.java:55)
-at freemarker.core.Expression.eval(Expression.java:101)
-at freemarker.core.Expression.evalToBoolean(Expression.java:177)
-at freemarker.core.Expression.evalToBoolean(Expression.java:163)
-at freemarker.core.AndExpression.evalToBoolean(AndExpression.java:36)
-at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
-at freemarker.core.Environment.visit(Environment.java:335)
-at freemarker.core.Environment.visit(Environment.java:341)
-at freemarker.core.Environment.process(Environment.java:314)
-at freemarker.template.Template.process(Template.java:383)
-at com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:53)
-at com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:40)
-at com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:46)
-at com.aventstack.extentreports.reporter.BasicFileReporter.processTemplate(BasicFileReporter.java:152)
-at com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:78)
-at com.aventstack.extentreports.ReportObservable.lambda$23(ReportObservable.java:526)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at com.aventstack.extentreports.ReportObservable.notifyReporters(ReportObservable.java:526)
-at com.aventstack.extentreports.ReportObservable.flush(ReportObservable.java:424)
-at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:290)
-at Base.BaseJava.tearDownReporter(BaseJava.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: org.bson.types.ObjectId
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528)
-... 62 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+    <test started-at="2025-09-22T16:47:41 CDT" name="Login and Dashboard Tests" finished-at="2025-09-22T16:48:00 CDT" duration-ms="19049">
+      <class name="Test.TestJava">
+        <test-method is-config="true" signature="setupReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:41 CDT" name="setupReporter" finished-at="2025-09-22T16:47:41 CDT" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownReporter -->
-      </class> <!-- Base.BaseJava -->
-      <class name="Test.TestJava">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:23 CDT" name="setup" finished-at="2025-09-17T20:47:25 CDT" duration-ms="1526" status="PASS">
+        </test-method> <!-- setupReporter -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:41 CDT" name="setup" finished-at="2025-09-22T16:47:42 CDT" duration-ms="1212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:25 CDT" name="openPage" finished-at="2025-09-17T20:47:26 CDT" duration-ms="1499" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:42 CDT" name="openPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="1562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:26 CDT" name="initPage" finished-at="2025-09-17T20:47:26 CDT" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="initPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="AdminView()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:26 CDT" name="AdminView" finished-at="2025-09-17T20:47:37 CDT" duration-ms="10534" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="verifyHomePageTitle" finished-at="2025-09-22T16:47:44 CDT" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="openPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="verifyDashboard()[pri:3, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="verifyDashboard" finished-at="2025-09-22T16:47:44 CDT" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/div/div[2]/div[1]/header/div[1]/div[3]/ul/li/ul/li[2]/a (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57797/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a7b4f1a82d9e76698f8ba77a80fe344]]>
+              <![CDATA[Navigation Fail expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/div/div[2]/div[1]/header/div[1]/div[3]/ul/li/ul/li[2]/a (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57797/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a7b4f1a82d9e76698f8ba77a80fe344
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at utils.WaitsUtil.clickable(WaitsUtil.java:41)
-at Page.ViewSystemUsers.GotoPIM(ViewSystemUsers.java:49)
-at Test.TestJava.AdminView(TestJava.java:87)
+              <![CDATA[java.lang.AssertionError: Navigation Fail expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Test.TestJava.verifyDashboard(TestJava.java:124)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -151,39 +70,146 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AdminView -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:37 CDT" name="openPage" finished-at="2025-09-17T20:47:37 CDT" duration-ms="484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openPage -->
-        <test-method signature="LoginVerification()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:37 CDT" name="LoginVerification" finished-at="2025-09-17T20:47:39 CDT" duration-ms="2003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginVerification -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:37 CDT" name="initPage" finished-at="2025-09-17T20:47:37 CDT" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyDashboard -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="initPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:39 CDT" name="openPage" finished-at="2025-09-17T20:47:41 CDT" duration-ms="1561" status="PASS">
+        <test-method signature="PIM()[pri:4, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="PIM" finished-at="2025-09-22T16:47:44 CDT" depends-on-methods="Test.TestJava.verifyDashboard" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test.TestJava.PIM() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
+[Test.TestJava.verifyDashboard() on instance Test.TestJava@17a7f733]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test.TestJava.PIM() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
+[Test.TestJava.verifyDashboard() on instance Test.TestJava@17a7f733]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PIM -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="openPage" finished-at="2025-09-22T16:47:45 CDT" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:41 CDT" name="verifyHomePageTitle" finished-at="2025-09-17T20:47:41 CDT" duration-ms="9" status="PASS">
+        <test-method signature="PimSearch()[pri:5, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:45 CDT" name="PimSearch" finished-at="2025-09-22T16:48:00 CDT" duration-ms="15211" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[PIM menu not accessible: Expected condition failed: waiting for element to be clickable: By.xpath: //aside//span[text()='PIM'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57249/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 457b39a27674d724cc378e406fc57c25]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: PIM menu not accessible: Expected condition failed: waiting for element to be clickable: By.xpath: //aside//span[text()='PIM'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57249/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 457b39a27674d724cc378e406fc57c25
+at Page.DashBoard.GotoPIM(DashBoard.java:50)
+at Test.TestJava.PimSearch(TestJava.java:149)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:41 CDT" name="initPage" finished-at="2025-09-17T20:47:41 CDT" duration-ms="0" status="PASS">
+        </test-method> <!-- PimSearch -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:45 CDT" name="initPage" finished-at="2025-09-22T16:47:45 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TestJava@5c90e579]" started-at="2025-09-17T20:47:41 CDT" name="tearDown" finished-at="2025-09-17T20:47:41 CDT" duration-ms="287" status="PASS">
+        <test-method signature="compare()[pri:6, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:48:00 CDT" name="compare" finished-at="2025-09-22T16:48:00 CDT" depends-on-methods="Test.TestJava.PimSearch" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Test.TestJava.compare() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
+[Test.TestJava.PimSearch() on instance Test.TestJava@17a7f733]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Test.TestJava.compare() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
+[Test.TestJava.PimSearch() on instance Test.TestJava@17a7f733]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- compare -->
+        <test-method is-config="true" signature="tearDownReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:48:00 CDT" name="tearDownReporter" finished-at="2025-09-22T16:48:02 CDT" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReporter -->
       </class> <!-- Test.TestJava -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login and Dashboard Tests -->
+  </suite> <!-- OrangeHRM Test Suite 01 -->
 </testng-results>
