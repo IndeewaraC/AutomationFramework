@@ -6,15 +6,11 @@
     <classes>
       <class name="Test.TestJava">
         <methods>
-          <include name="PimSearch"/>
           <include name="tearDownReporter"/>
           <include name="openPage"/>
           <include name="setupReporter"/>
+          <include name="loginVerification" invocation-numbers="0 1 2 3 4"/>
           <include name="setup"/>
-          <include name="loginVerification"/>
-          <include name="compare"/>
-          <include name="PIM"/>
-          <include name="verifyDashboard"/>
           <include name="initPage"/>
         </methods>
       </class> <!-- Test.TestJava -->
