@@ -1,47 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="1" failed="2" skipped="2">
+<testng-results ignored="0" total="11" passed="6" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-22T16:47:41 CDT" name="OrangeHRM Test Suite 01" finished-at="2025-09-22T16:48:00 CDT" duration-ms="19049">
+  <suite started-at="2025-09-22T17:21:44 CDT" name="OrangeHRM Test Suite 01" finished-at="2025-09-22T17:22:14 CDT" duration-ms="29780">
     <groups>
     </groups>
-    <test started-at="2025-09-22T16:47:41 CDT" name="Login and Dashboard Tests" finished-at="2025-09-22T16:48:00 CDT" duration-ms="19049">
+    <test started-at="2025-09-22T17:21:44 CDT" name="Login and Dashboard Tests" finished-at="2025-09-22T17:22:14 CDT" duration-ms="29780">
       <class name="Test.TestJava">
-        <test-method is-config="true" signature="setupReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:41 CDT" name="setupReporter" finished-at="2025-09-22T16:47:41 CDT" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="setupReporter()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:44 CDT" name="setupReporter" finished-at="2025-09-22T17:21:44 CDT" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReporter -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:41 CDT" name="setup" finished-at="2025-09-22T16:47:42 CDT" duration-ms="1212" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:44 CDT" name="setup" finished-at="2025-09-22T17:21:46 CDT" duration-ms="1203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:42 CDT" name="openPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="1562" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:46 CDT" name="openPage" finished-at="2025-09-22T17:21:47 CDT" duration-ms="1462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="initPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:47 CDT" name="initPage" finished-at="2025-09-22T17:21:47 CDT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="verifyHomePageTitle" finished-at="2025-09-22T16:47:44 CDT" duration-ms="22" status="PASS">
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:47 CDT" name="verifyHomePageTitle" finished-at="2025-09-22T17:21:47 CDT" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="openPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="479" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:48 CDT" name="openPage" finished-at="2025-09-22T17:21:48 CDT" duration-ms="528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="verifyDashboard()[pri:3, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="verifyDashboard" finished-at="2025-09-22T16:47:44 CDT" duration-ms="15" status="FAIL">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:48 CDT" name="initPage" finished-at="2025-09-22T17:21:48 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:48 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T17:21:50 CDT" duration-ms="1925" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Navigation Fail expected [true] but found [false]]]>
+              <![CDATA[URL mismatch for user: Admin expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Navigation Fail expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: URL mismatch for user: Admin expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at Test.TestJava.verifyDashboard(TestJava.java:124)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Test.TestJava.loginVerification(TestJava.java:88)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -73,68 +91,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDashboard -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="initPage" finished-at="2025-09-22T16:47:44 CDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initPage -->
-        <test-method signature="PIM()[pri:4, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="PIM" finished-at="2025-09-22T16:47:44 CDT" depends-on-methods="Test.TestJava.verifyDashboard" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Test.TestJava.PIM() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
-[Test.TestJava.verifyDashboard() on instance Test.TestJava@17a7f733]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Test.TestJava.PIM() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
-[Test.TestJava.verifyDashboard() on instance Test.TestJava@17a7f733]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PIM -->
-        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:44 CDT" name="openPage" finished-at="2025-09-22T16:47:45 CDT" duration-ms="470" status="PASS">
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:50 CDT" name="openPage" finished-at="2025-09-22T17:21:51 CDT" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="PimSearch()[pri:5, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:45 CDT" name="PimSearch" finished-at="2025-09-22T16:48:00 CDT" duration-ms="15211" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:51 CDT" name="initPage" finished-at="2025-09-22T17:21:51 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:51 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T17:21:52 CDT" duration-ms="1785" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Indeewara]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[!#!#!@#]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[PIM menu not accessible: Expected condition failed: waiting for element to be clickable: By.xpath: //aside//span[text()='PIM'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57249/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 457b39a27674d724cc378e406fc57c25]]>
+              <![CDATA[URL mismatch for user: Indeewara expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: PIM menu not accessible: Expected condition failed: waiting for element to be clickable: By.xpath: //aside//span[text()='PIM'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\indee\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57249}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57249/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 457b39a27674d724cc378e406fc57c25
-at Page.DashBoard.GotoPIM(DashBoard.java:50)
-at Test.TestJava.PimSearch(TestJava.java:149)
+              <![CDATA[java.lang.AssertionError: URL mismatch for user: Indeewara expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Test.TestJava.loginVerification(TestJava.java:88)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -163,24 +153,51 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PimSearch -->
-        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:47:45 CDT" name="initPage" finished-at="2025-09-22T16:47:45 CDT" duration-ms="0" status="PASS">
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:52 CDT" name="openPage" finished-at="2025-09-22T17:21:53 CDT" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:53 CDT" name="initPage" finished-at="2025-09-22T17:21:53 CDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initPage -->
-        <test-method signature="compare()[pri:6, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:48:00 CDT" name="compare" finished-at="2025-09-22T16:48:00 CDT" depends-on-methods="Test.TestJava.PimSearch" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:53 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T17:21:55 CDT" duration-ms="1792" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@##@#!#@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fgfdgfd]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Method Test.TestJava.compare() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
-[Test.TestJava.PimSearch() on instance Test.TestJava@17a7f733]]]>
+              <![CDATA[URL mismatch for user: !@##@#!#@ expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Test.TestJava.compare() on instance Test.TestJava@17a7f733 depends on not successfully finished methods 
-[Test.TestJava.PimSearch() on instance Test.TestJava@17a7f733]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+              <![CDATA[java.lang.AssertionError: URL mismatch for user: !@##@#!#@ expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Test.TestJava.loginVerification(TestJava.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -201,11 +218,213 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:55 CDT" name="openPage" finished-at="2025-09-22T17:21:55 CDT" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:55 CDT" name="initPage" finished-at="2025-09-22T17:21:55 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:55 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T17:21:57 CDT" duration-ms="1786" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Harshani@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdffasd]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL mismatch for user: Harshani@gmail.com expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL mismatch for user: Harshani@gmail.com expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Test.TestJava.loginVerification(TestJava.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:57 CDT" name="openPage" finished-at="2025-09-22T17:21:57 CDT" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:57 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T17:21:59 CDT" duration-ms="1768" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1232454987]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Office]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[URL mismatch for user: 1232454987 expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: URL mismatch for user: 1232454987 expected [https://indeewarag-osondemand.orangehrm.com/dashboard/index] but found [https://indeewarag-osondemand.orangehrm.com/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Test.TestJava.loginVerification(TestJava.java:88)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:57 CDT" name="initPage" finished-at="2025-09-22T17:21:57 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:21:59 CDT" name="openPage" finished-at="2025-09-22T17:22:00 CDT" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="loginVerification(java.lang.String,java.lang.String)[pri:2, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:00 CDT" name="loginVerification" data-provider="loginFromExcel" finished-at="2025-09-22T17:22:01 CDT" duration-ms="1932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@cKJCM@4@w3b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginVerification -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:00 CDT" name="initPage" finished-at="2025-09-22T17:22:00 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:01 CDT" name="openPage" finished-at="2025-09-22T17:22:03 CDT" duration-ms="1141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="verifyDashboard()[pri:3, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:03 CDT" name="verifyDashboard" finished-at="2025-09-22T17:22:03 CDT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDashboard -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:03 CDT" name="initPage" finished-at="2025-09-22T17:22:03 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:03 CDT" name="openPage" finished-at="2025-09-22T17:22:04 CDT" duration-ms="1066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="PIM()[pri:4, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:04 CDT" name="PIM" finished-at="2025-09-22T17:22:07 CDT" depends-on-methods="Test.TestJava.verifyDashboard" duration-ms="2888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PIM -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:04 CDT" name="initPage" finished-at="2025-09-22T17:22:04 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:07 CDT" name="openPage" finished-at="2025-09-22T17:22:07 CDT" duration-ms="903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="PimSearch()[pri:5, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:07 CDT" name="PimSearch" finished-at="2025-09-22T17:22:10 CDT" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PimSearch -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:07 CDT" name="initPage" finished-at="2025-09-22T17:22:07 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="openPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:10 CDT" name="openPage" finished-at="2025-09-22T17:22:11 CDT" duration-ms="975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="compare()[pri:6, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:11 CDT" name="compare" finished-at="2025-09-22T17:22:14 CDT" depends-on-methods="Test.TestJava.PimSearch" duration-ms="3155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compare -->
-        <test-method is-config="true" signature="tearDownReporter()[pri:0, instance:Test.TestJava@17a7f733]" started-at="2025-09-22T16:48:00 CDT" name="tearDownReporter" finished-at="2025-09-22T16:48:02 CDT" duration-ms="1612" status="PASS">
+        <test-method is-config="true" signature="initPage()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:11 CDT" name="initPage" finished-at="2025-09-22T17:22:11 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDownReporter()[pri:0, instance:Test.TestJava@394a2528]" started-at="2025-09-22T17:22:14 CDT" name="tearDownReporter" finished-at="2025-09-22T17:22:16 CDT" duration-ms="2053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReporter -->
